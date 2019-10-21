@@ -21,7 +21,7 @@ ggplot(mex_16, aes(area = Ktoe, fill = Source, label = Code, subgroup = Source))
   geom_treemap_subgroup_text(place = "centre", grow = T, alpha = 0.5, colour =
                                "black", fontface = "italic", min.size = 0) +
   geom_treemap_text(colour = "white", place = "topleft", reflow = T)+ 
-  #color code obtained in: http://colorbrewer2.org/
+  #color codes obtained from: http://colorbrewer2.org/
   scale_fill_manual(values = c("#d8b365", "#8c510a","#003c30","#35978f","#01665e", "#543005"),
                     labels=c("Coal", "Comb. Renewables", "Electricity","Gas", "Oil","Other sources" ))+
   labs(title = "Industry energy consumption by source in Mexico, 2016", 
